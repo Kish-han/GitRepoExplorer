@@ -5,8 +5,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://lustrous-kheer-c30df6.netlify.app](https://lustrous-kheer-c30df6.netlify.app)
-
+[https://keen-fudge-28afbe.netlify.app](https://keen-fudge-28afbe.netlify.app)
   
   
 <h2>🧐 Features</h2>
