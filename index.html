@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle WebDevelopment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d8e2755db7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Github Repositories</h1>
+
+        <!-- Loader -->
+        <div id="loader" class="loader"></div>
+
+        <!-- Repositories Search -->
+        <div class="repoSearch">
+            <input type="text" id="usernameInput" placeholder="Enter GitHub Username..." onkeydown="handleKeyPressforuser(event)">
+            <button onclick="fetchRepositories()" >Find User</button>
+        </div>
+
+        <!-- Profile Section -->
+        <div id="profile" class="profileSection"></div>
+
+        <!-- Find Repositories -->
+        <div class="searchRepo">
+            <div class="search-container">
+                <input type="text" id="repoSearchInput" placeholder="Search for a repository..." onkeydown="handleKeyPressforrepo(event)">
+                <button onclick="searchRepositories()">Search</button>
+            </div>
+            <div class="numOfPages">
+                <label for="perPage">Repositories per Page:</label>
+                <select id="perPage" onchange="changePerPage()">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Repositories -->
+        <div id="repositories-list" class="repoList"></div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
